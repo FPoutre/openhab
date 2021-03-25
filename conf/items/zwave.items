@@ -1,4 +1,4 @@
-Group                 ZWave
+Group                 gZWave
 // ZWave Controller
 Number                ZWaveController_Serial_Sof       "Start Frames"                           <text>                                                                            {channel = "zwave:serial_zstick:612f02c0:serial_sof"}
 Number                ZWaveController_Serial_Ack       "Frames Acknowledged"                    <text>              (ZWave)                                                       {channel = "zwave:serial_zstick:612f02c0:serial_ack"}
