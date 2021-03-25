@@ -1,4 +1,4 @@
-Bridge hue:bridge:hue_bridge "Philips Hue Bridge" [ ipAddress="192.168.1.37" ]
+Bridge hue:bridge:hue_bridge "Philips Hue Bridge" [ ipAddress="192.168.1.37", userName="dJ8fVu9OgJZR01NE2fpOJ1PUShWoJxMz-04ySuhJ" ]
 {
-    Thing   0100    hueWLight1  "Philips Hue Light 1"   [ lightId="1" ]
+    Thing   0100    hueLight1  "Philips Hue Light 1"   [ lightId="1" ]
 }

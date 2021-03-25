@@ -1,0 +1,5 @@
+Group       gHue
+
+Group       hueLight1                   "Philips Hue Light 1"       <light>                                        ["lightbulb"]
+// Philips Hue White Light 1
+Number      hueLight1_Brightness        "Brightness"                <light>             (gHue,hueLight1)           ["Control", "Light"]               {channel="hue:0100:hue_bridge:hueWLight1:brightness"}
