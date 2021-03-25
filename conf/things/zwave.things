@@ -1,11 +1,11 @@
 Bridge zwave:serial_zstick:612f02c0 "ZWave Controller" [ port="/dev/ttyACM0" ]
 {
-	Thing fibaro_fgwp102_03_002     plug1       "Wall Plug Switch 1"    [ node_id=3 ]
-	Thing fibaro_fgwp102_03_002     plug2       "Wall Plug Switch 2"    [ node_id=7 ]
-	Thing fibaro_fgwp102_03_002     plug3       "Wall Plug Switch 3"    [ node_id=10 ]
+	Thing fibaro_fgwp102_03_002     zWavePlug1       "ZWave Wall Plug Switch 1"    [ node_id=3 ]
+	Thing fibaro_fgwp102_03_002     zWavePlug2       "ZWave Wall Plug Switch 2"    [ node_id=7 ]
+	Thing fibaro_fgwp102_03_002     zWavePlug3       "ZWave Wall Plug Switch 3"    [ node_id=10 ]
 
-    Thing philio_pst02a_00_000      door1       "Slim Multi-Sensor 1"   [ node_id=8 ]
-	Thing philio_pst02a_00_000      door2       "Slim Multi-Sensor 2"   [ node_id=9 ]
+    Thing philio_pst02a_00_000      zWaveDoor1       "ZWave Slim Multi-Sensor 1"   [ node_id=8 ]
+	Thing philio_pst02a_00_000      zWaveDoor2       "ZWave Slim Multi-Sensor 2"   [ node_id=9 ]
 
-    Thing aeotec_zwa001_00_000      wlight1     "White Light 1"         [ node_id=5 ]
+    Thing aeotec_zwa001_00_000      zWaveLight1      "ZWave White Light 1"         [ node_id=5 ]
 }

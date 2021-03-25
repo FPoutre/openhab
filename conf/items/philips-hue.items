@@ -3,3 +3,11 @@ Group       gHue
 Group       hueLight1                   "Philips Hue Light 1"       <light>                                        ["lightbulb"]
 // Philips Hue White Light 1
 Dimmer      hueLight1_Dimmer            "Dimmer"                    <light>             (gHue,hueLight1)           ["Control", "Light"]               {channel="hue:0100:hue_bridge:hueLight1:brightness"}
+
+Group       hueLight2                   "Philips Hue Light 2"       <light>                                        ["lightbulb"]
+// Philips Hue White Light 2
+Dimmer      hueLight2_Dimmer            "Dimmer"                    <light>             (gHue,hueLight2)           ["Control", "Light"]               {channel="hue:0100:hue_bridge:hueLight2:brightness"}
+
+Group       hueLight3                   "Philips Hue Light 3"       <light>                                        ["lightbulb"]
+// Philips Hue White Light 3
+Dimmer      hueLight3_Dimmer            "Dimmer"                    <light>             (gHue,hueLight3)           ["Control", "Light"]               {channel="hue:0100:hue_bridge:hueLight3:brightness"}
