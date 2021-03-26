@@ -1,0 +1,16 @@
+Group   gTradfri
+
+Group       tradfriRemote                               "TRÅDFRI Remote Controller"       <remote>                                                  ["Remote"]
+// TRÅDFRI Remote Controller
+Number      tradfriRemote_BatteryLevel                  "Battery Level"                   <battery>             (gTradfri,tradfriRemote)            ["Measurement", "Battery"]          {channel="tradfri:gateway:tradfriGateway:tradfriRemote:battery_level"}
+Switch      tradfriRemote_BatteryLow                    "Battery Low"                     <lowbattery>          (gTradfri,tradfriRemote)            ["Alarm", "Battery"]                {channel="tradfri:gateway:tradfriGateway:tradfriRemote:battery_low"}
+
+Group       tradfriColorLight1                          "TRÅDFRI Color Light 1"           <colorlight>                                              ["ColorLight"]
+// TRÅDFRI Color Light 1
+Color       tradfriColorLight1_Color                    "Color Control"                   <colorlight>          (gTradfri,tradfriColorLight1)       ["Control", "Color"]                {channel="tradfri:gateway:tradfriGateway:tradfriColorLight1:color"}
+Dimmer      tradfriColorLight1_Color_Temperature        "Color Temperature"               <colorlight>          (gTradfri,tradfriColorLight1)       ["Control", "ColorTemperature"]     {channel="tradfri:gateway:tradfriGateway:tradfriColorLight1:color_temperature"}
+
+Group       tradfriColorLight2                          "TRÅDFRI Color Light 2"           <colorlight>                                              ["ColorLight"]
+// TRÅDFRI Color Light 1
+Color       tradfriColorLight2_Color                    "Color Control"                   <colorlight>          (gTradfri,tradfriColorLight1)       ["Control", "Color"]                {channel="tradfri:gateway:tradfriGateway:tradfriColorLight2:color"}
+Dimmer      tradfriColorLight2_Color_Temperature        "Color Temperature"               <colorlight>          (gTradfri,tradfriColorLight1)       ["Control", "ColorTemperature"]     {channel="tradfri:gateway:tradfriGateway:tradfriColorLight2:color_temperature"}
