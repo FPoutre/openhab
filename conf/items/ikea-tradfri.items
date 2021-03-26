@@ -11,6 +11,6 @@ Color       tradfriColorLight1_Color                    "Color Control"         
 Dimmer      tradfriColorLight1_Color_Temperature        "Color Temperature"               <colorlight>          (gTradfri,tradfriColorLight1)       ["Control", "ColorTemperature"]     {channel="tradfri:0210:tradfriGateway:tradfriColorLight1:color_temperature"}
 
 Group       tradfriColorLight2                          "TRÅDFRI Color Light 2"           <colorlight>                                              ["ColorLight"]
-// TRÅDFRI Color Light 1
-Color       tradfriColorLight2_Color                    "Color Control"                   <colorlight>          (gTradfri,tradfriColorLight1)       ["Control", "Color"]                {channel="tradfri:0210:tradfriGateway:tradfriColorLight2:color"}
-Dimmer      tradfriColorLight2_Color_Temperature        "Color Temperature"               <colorlight>          (gTradfri,tradfriColorLight1)       ["Control", "ColorTemperature"]     {channel="tradfri:0210:tradfriGateway:tradfriColorLight2:color_temperature"}
+// TRÅDFRI Color Light 2
+Color       tradfriColorLight2_Color                    "Color Control"                   <colorlight>          (gTradfri,tradfriColorLight2)       ["Control", "Color"]                {channel="tradfri:0210:tradfriGateway:tradfriColorLight2:color"}
+Dimmer      tradfriColorLight2_Color_Temperature        "Color Temperature"               <colorlight>          (gTradfri,tradfriColorLight2)       ["Control", "ColorTemperature"]     {channel="tradfri:0210:tradfriGateway:tradfriColorLight2:color_temperature"}
