@@ -1,0 +1,6 @@
+Bridge tradfri:gateway:tradfriGateway [ host="192.168.1.66", code="Xf38I3ExJjaGkBcA" ]
+{
+    Thing   0830    tradfriRemote           "Ikea Tradfri Remote Controller"    [ id="" ]
+    Thing   0210    tradfriColorLight1      "Ikea Tradfri Color Light 1"        [ id="" ]
+    Thing   0210    tradfriColorLight2      "Ikea Tradfri Color Light 2"        [ id="" ] 
+}
