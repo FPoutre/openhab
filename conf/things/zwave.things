@@ -9,5 +9,5 @@ Bridge zwave:serial_zstick:612f02c0 "ZWave Controller" [ port="/dev/ttyACM0" ]
 
     Thing aeotec_zwa001_00_000      zWaveLight1     "ZWave White Light 1"         	[ node_id=5 ]
 
-	Thing qubino_zmnhcd_04_001		zWaveShutter1	"ZWave Shutter Controller 1"	[ node_id=11 ]
+	Thing qubino_zmnhcd_04_001		zWaveShutter1	"ZWave Shutter 1"				[ node_id=11 ]
 }
