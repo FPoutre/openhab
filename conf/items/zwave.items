@@ -8,7 +8,7 @@ Number                ZWaveController_Serial_Oof            "OOF Bytes Received"
 Number                ZWaveController_Serial_Cse            "Received Checksum Errors"               <text>              (gZWave)
 
 Group                 zWaveWallPlug1                        "Power Outlet 1"                         <poweroutlet>                                  ["PowerOutlet"]
-// Wall Plug Switch 1
+// Wall Plug Switch 1 - Fibaro FGWP102
 Switch                zWaveWallPlug1_Switch                 "Switch"                                 <poweroutlet>       (gZWave,zWaveWallPlug1)     ["Switch"]                         {channel="zwave:fibaro_fgwp102_03_002:612f02c0:zWavePlug1:switch_binary"}
 Number                zWaveWallPlug1_Sensor_Power           "Sensor (power)"                         <energy>            (gZWave,zWaveWallPlug1)     ["Measurement", "Power"]           {channel="zwave:fibaro_fgwp102_03_002:612f02c0:zWavePlug1:sensor_power"}
 Number                zWaveWallPlug1_Meter_Watts            "Electric meter (watts)"                 <energy>            (gZWave,zWaveWallPlug1)                                        {channel="zwave:fibaro_fgwp102_03_002:612f02c0:zWavePlug1:meter_watts"}
@@ -19,7 +19,7 @@ Number                zWaveWallPlug1_Led_Off                "LED ring colour whe
 Switch                zWaveWallPlug1_Alarm_Power            "Alarm (power)"                          <alarm>             (gZWave,zWaveWallPlug1)     ["Alarm"]                          {channel="zwave:fibaro_fgwp102_03_002:612f02c0:zWavePlug1:alarm_power"}
 
 Group                 zWaveWallPlug2                        "Power Outlet 2"                         <poweroutlet>                                   ["PowerOutlet"]
-// Wall Plug Switch 2
+// Wall Plug Switch 2 - Fibaro FGWP102
 Switch                zWaveWallPlug2_Switch                 "Switch"                                 <poweroutlet>       (gZWave,zWaveWallPlug2)     ["Switch"]                         {channel="zwave:fibaro_fgwp102_03_002:612f02c0:zWavePlug2:switch_binary"}
 Number                zWaveWallPlug2_Sensor_Power           "Sensor (power)"                         <energy>            (gZWave,zWaveWallPlug2)     ["Measurement", "Power"]           {channel="zwave:fibaro_fgwp102_03_002:612f02c0:zWavePlug2:sensor_power"}
 Number                zWaveWallPlug2_Meter_Watts            "Electric meter (watts)"                 <energy>            (gZWave,zWaveWallPlug2)                                        {channel="zwave:fibaro_fgwp102_03_002:612f02c0:zWavePlug2:meter_watts"}
@@ -30,7 +30,7 @@ Number                zWaveWallPlug2_Led_Off                "LED ring colour whe
 Switch                zWaveWallPlug2_Alarm_power            "Alarm (power)"                          <alarm>             (gZWave,zWaveWallPlug2)     ["Alarm"]                          {channel="zwave:fibaro_fgwp102_03_002:612f02c0:zWavePlug2:alarm_power"}
 
 Group                 zWaveWallPlug3                        "Power Outlet 3"                         <poweroutlet>                                   ["PowerOutlet"]
-// Wall Plug Switch 3
+// Wall Plug Switch 3 - Fibaro FGWP102
 Switch                zWaveWallPlug3_Switch                 "Switch"                                 <poweroutlet>       (gZWave,zWaveWallPlug3)     ["Switch"]                         {channel="zwave:fibaro_fgwp102_03_002:612f02c0:zWavePlug3:switch_binary"}
 Number                zWaveWallPlug3_Sensor_Power           "Sensor (power)"                         <energy>            (gZWave,zWaveWallPlug3)     ["Measurement", "Power"]           {channel="zwave:fibaro_fgwp102_03_002:612f02c0:zWavePlug3:sensor_power"}
 Number                zWaveWallPlug3_Meter_Watts            "Electric meter (watts)"                 <energy>            (gZWave,zWaveWallPlug3)                                        {channel="zwave:fibaro_fgwp102_03_002:612f02c0:zWavePlug3:meter_watts"}
@@ -39,6 +39,22 @@ Switch                zWaveWallPlug3_Reset                  "Reset the total pow
 Number                zWaveWallPlug3_Led_On                 "LED ring colour when device is on"                          (gZWave,zWaveWallPlug3)                                        {channel="zwave:fibaro_fgwp102_03_002:612f02c0:zWavePlug3:config_decimal_param41"}
 Number                zWaveWallPlug3_Led_Off                "LED ring colour when device is off"                         (gZWave,zWaveWallPlug3)                                        {channel="zwave:fibaro_fgwp102_03_002:612f02c0:zWavePlug3:config_decimal_param42"}
 Switch                zWaveWallPlug3_Alarm_Power            "Alarm (power)"                          <alarm>             (gZWave,zWaveWallPlug3)     ["Alarm"]                          {channel="zwave:fibaro_fgwp102_03_002:612f02c0:zWavePlug3:alarm_power"}
+
+Group                 zWaveWallPlug4                        "Power Outlet 4"                         <poweroutlet>                                   ["PowerOutlet"]
+// Wall Plug Switch 4 - Everspring AN158-6
+Switch                zWaveWallPlug4_Switch                 "Switch"                                 <poweroutlet>       (gZWave,zWaveWallPlug4)     ["Switch"]                         {channel="zwave:everspring_an158_00_000:612f02c0:zWavePlug4:switch_binary"}
+Number                zWaveWallPlug4_Meter_Watts            "Electric meter (watts)"                 <energy>            (gZWave,zWaveWallPlug4)                                        {channel="zwave:everspring_an158_00_000:612f02c0:zWavePlug4:meter_watts"}
+Number                zWaveWallPlug4_Meter_kWh              "Electric meter (kWh)"                   <energy>            (gZWave,zWaveWallPlug4)                                        {channel="zwave:everspring_an158_00_000:612f02c0:zWavePlug4:meter_kwh"}
+Switch                zWaveWallPlug4_Reset                  "Reset the total power consumption"      <switch>            (gZWave,zWaveWallPlug4)                                        {channel="zwave:everspring_an158_00_000:612f02c0:zWavePlug4:meter_reset"}
+Switch                zWaveWallPlug4_Alarm                  "Alarm"                                  <alarm>             (gZWave,zWaveWallPlug4)     ["Alarm"]                          {channel="zwave:everspring_an158_00_000:612f02c0:zWavePlug4:alarm_general"}
+
+Group                 zWaveWallPlug5                        "Power Outlet 5"                         <poweroutlet>                                   ["PowerOutlet"]
+// Wall Plug Switch 5 - Everspring AN158-6
+Switch                zWaveWallPlug5_Switch                 "Switch"                                 <poweroutlet>       (gZWave,zWaveWallPlug5)     ["Switch"]                         {channel="zwave:everspring_an158_00_000:612f02c0:zWavePlug5:switch_binary"}
+Number                zWaveWallPlug5_Meter_Watts            "Electric meter (watts)"                 <energy>            (gZWave,zWaveWallPlug5)                                        {channel="zwave:everspring_an158_00_000:612f02c0:zWavePlug5:meter_watts"}
+Number                zWaveWallPlug5_Meter_kWh              "Electric meter (kWh)"                   <energy>            (gZWave,zWaveWallPlug5)                                        {channel="zwave:everspring_an158_00_000:612f02c0:zWavePlug5:meter_kwh"}
+Switch                zWaveWallPlug5_Reset                  "Reset the total power consumption"      <switch>            (gZWave,zWaveWallPlug5)                                        {channel="zwave:everspring_an158_00_000:612f02c0:zWavePlug5:meter_reset"}
+Switch                zWaveWallPlug5_Alarm                  "Alarm"                                  <alarm>             (gZWave,zWaveWallPlug5)     ["Alarm"]                          {channel="zwave:everspring_an158_00_000:612f02c0:zWavePlug5:alarm_general"}
 
 Group                 zWaveDoor1                            "Door 1"                                 <door>                                          ["Door"]
 // Slim Multi-Sensor 1
@@ -73,7 +89,7 @@ Group                 zWaveShutter1                         "Shutter 1"         
 // Shutter 1
 Switch                zWaveShutter1_Switch_Binary           "Switch"                                 <switch>            (gZWave,zWaveShutter1)      ["Control", "Blinds"]              {channel="zwave:qubino_zmnhcd_04_001:612f02c0:zWaveShutter1:switch_binary"}
 Rollershutter         zWaveShutter1_Blinds_Control          "Blinds Control"                         <blinds>            (gZWave,zWaveShutter1)      ["Control", "Blinds"]              {channel="zwave:qubino_zmnhcd_04_001:612f02c0:zWaveShutter1:blinds_control"}
-Number:Temperature    zWaveShutter1_Sensor_Temperature      "Sensor (Temperature)"                   <temperature>       (gZWave,zWaveShutter1)      ["Temperature"]                    {channel="zwave:qubino_zmnhcd_04_001:612f02c0:zWaveShutter1:sensor_temperature"}
+Number:Temperature    zWaveShutter1_Sensor_Temperature      "Sensor (Temperature)"                   <temperature>       (gZWave,zWaveShutter1)      ["Measurement", "Temperature"]     {channel="zwave:qubino_zmnhcd_04_001:612f02c0:zWaveShutter1:sensor_temperature"}
 Number                zWaveShutter1_Meter_kWh               "Energy Consumption (kWh)"               <energy>            (gZWave,zWaveShutter1)      ["Measurement", "Energy"]          {channel="zwave:qubino_zmnhcd_04_001:612f02c0:zWaveShutter1:meter_kwh"}
 Number                zWaveShutter1_Meter_Watts             "Power Consumption (W)"                  <energy>            (gZWave,zWaveShutter1)      ["Measurement", "Power"]           {channel="zwave:qubino_zmnhcd_04_001:612f02c0:zWaveShutter1:meter_watts"}
 Switch                zWaveShutter1_Switch_Binary1          "Switch 1"                               <switch>            (gZWave,zWaveShutter1)      ["Control", "Blinds"]              {channel="zwave:qubino_zmnhcd_04_001:612f02c0:zWaveShutter1:switch_binary1"}
@@ -82,3 +98,12 @@ Number                zWaveShutter1_Meter_kWh1              "Energy Consumption 
 Number                zWaveShutter1_Meter_Watts1            "Power Consumption 1 (W)"                <energy>            (gZWave,zWaveShutter1)      ["Measurement", "Power"]           {channel="zwave:qubino_zmnhcd_04_001:612f02c0:zWaveShutter1:meter_watts1"}
 Switch                zWaveShutter1_Switch_Binary2          "Switch 2"                               <switch>            (gZWave,zWaveShutter1)      ["Control", "Blinds"]              {channel="zwave:qubino_zmnhcd_04_001:612f02c0:zWaveShutter1:switch_binary2"}
 Rollershutter         zWaveShutter1_Blinds_Control2         "Blinds Control 2"                       <blinds>            (gZWave,zWaveShutter1)      ["Control", "Blinds"]              {channel="zwave:qubino_zmnhcd_04_001:612f02c0:zWaveShutter1:blinds_control2"}
+
+Group                 zWaveMultiSensor1                     "MultiSensor 1"
+// Aeotec Multi Sensor 6
+Number                zWaveMultiSensor1_Humidity            "Relative Humidity"                      <humidity>          (gZWave,zWaveMultiSensor1)  ["Measurement", "Humidity"]        {channel="zwave:aeon_zw100_01_007:612f02c0:zWaveMultiSensor1:sensor_relhumidity"}
+Number                zWaveMultiSensor1_UV                  "Ultraviolet"                            <sun>               (gZWave,zWaveMultiSensor1)  ["Measurement", "UV"]              {channel="zwave:aeon_zw100_01_007:612f02c0:zWaveMultiSensor1:sensor_ultraviolet"}
+Number:Temperature    zWaveMultiSensor1_Temperature         "Temperature"                            <temperature>       (gZWave,zWaveMultiSensor1)  ["Measurement", "Temperature"]     {channel="zwave:aeon_zw100_01_007:612f02c0:zWaveMultiSensor1:sensor_temperature"}
+Number                zWaveMultiSensor1_Luminance           "Luminance"                              <sun>               (gZWave,zWaveMultiSensor1)  ["Measurement", "Light"]           {channel="zwave:aeon_zw100_01_007:612f02c0:zWaveMultiSensor1:sensor_luminance"}
+Switch                zWaveMultiSensor1_Motion_Alarm        "Motion Alarm"                           <motion>            (gZWave,zWaveMultiSensor1)  ["Motion"]                         {channel="zwave:aeon_zw100_01_007:612f02c0:zWaveMultiSensor1:alarm_motion"}
+Switch                zWaveMultiSensor1_Tamper_Alarm        "Tamper Alarm"                           <alarm>             (gZWave,zWaveMultiSensor1)  ["Alarm"]                          {channel="zwave:aeon_zw100_01_007:612f02c0:zWaveMultiSensor1:alarm_tamper"}
